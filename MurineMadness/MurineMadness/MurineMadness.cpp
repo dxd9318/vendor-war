@@ -2,9 +2,9 @@
 //
 
 #include <iostream>
-#include "Fighter.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
 }
+

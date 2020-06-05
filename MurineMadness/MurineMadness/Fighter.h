@@ -7,7 +7,7 @@
 #include <stdlib.h> // supports random
 #include <time.h>	// provides seeding for random
 
-class Fighter 
+class Fighter
 {
 public:
 	// Constructor
@@ -42,6 +42,6 @@ private:
 	int dodgePerc;
 	int critPerc;
 	int initiative;
-	
+
 };
 #endif FIGHTER__H

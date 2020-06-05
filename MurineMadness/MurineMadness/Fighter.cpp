@@ -1,7 +1,7 @@
 #include "Fighter.h"
 
 // Constructor
-Fighter::Fighter() 
+Fighter::Fighter()
 {
 	// read in data from json file
 	// populate stats with file data
@@ -9,7 +9,7 @@ Fighter::Fighter()
 	// start the seed for random
 }
 // Destructor
-Fighter::~Fighter() 
+Fighter::~Fighter()
 {
 
 }
@@ -21,23 +21,23 @@ int Fighter::GetDamage() { return damage; }
 int Fighter::GetAttacks() { return attacks; }	// For calculating number of turns in rounds
 
 // Setters
-void Fighter::UpdateHealth() 
+void Fighter::UpdateHealth()
 {
 	// do i incorporate dodge here?
 
-}	
+}
 void Fighter::MarkDefeated() { defeated = true; }
 
 // Actions
-int Fighter::RollInitiative() 
+int Fighter::RollInitiative()
 {
 	// returns (initiative + random value from 1 to 20).
 
 
 
-}	
-int Fighter::Attack() 
+}
+int Fighter::Attack()
 {
 	// Damage (+ Damage if roll higher than critPerc)
 
-}	
+}

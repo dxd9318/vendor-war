@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{2E6A3096-C536-46AE-A8DB-D13F87347E51}</ProjectGuid>
+    <ProjectGuid>{8E41F695-D9F2-4CBD-B989-87CFD108AD84}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MurineMadness</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -151,10 +151,10 @@
     <ClCompile Include="MurineMadness.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\vendor_fighters.json" />
+    <ClInclude Include="Fighter.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Fighter.h" />
+    <None Include="Assets\vendor_fighters.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
