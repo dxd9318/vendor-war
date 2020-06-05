@@ -29,7 +29,7 @@ public:
 	void SetDefeated();
 
 	// Helpers
-	int Attack(Fighter opponent);	// Damage (+ Damage if roll higher than critPerc)
+	int Attack(Fighter* opponent);	// Damage (+ Damage if roll higher than critPerc)
 private:
 
 	// Has this vendor/fighter lost?

@@ -63,12 +63,12 @@ void Fighter::SetDefeated() { defeated = true; }
 
 
 // Helpers
-int Fighter::Attack(Fighter opponent)
+int Fighter::Attack(Fighter* opponent)
 {
 	int damageDealt = 0;
 
 	// Check opponent's dodge chance
-	if (opponent.GetDodgePerc() >= (rand() % 20)) 
+	if (opponent->GetDodgePerc() >= (rand() % 20)) 
 	{
 		// Opponent successfully dodged this attack
 		return damageDealt; // 0
