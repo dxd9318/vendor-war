@@ -11,24 +11,25 @@ class Fighter
 {
 public:
 	// Constructor
-	Fighter();
+	Fighter(std::string vName, int hp, int dmg, int ap, int dp, int cp, int init);
 	// Destructor
 	~Fighter();
-
 
 	// Getters
 	std::string GetVendorName();
 	int GetCurrentHealth();
 	int GetDamage();
 	int GetAttacks();	// For calculating number of turns in rounds
+	int GetDodgePerc();
+
+	int RollInitiative();	// returns (initiative + random value from 1 to 20).
 
 	// Setters
-	void UpdateHealth();	// do i incorporate dodge here?
-	void MarkDefeated();
+	void SetHealth(int damageTaken);
+	void SetDefeated();
 
-	// Actions
-	int RollInitiative();	// returns (initiative + random value from 1 to 20).
-	int Attack();	// Damage (+ Damage if roll higher than critPerc)
+	// Helpers
+	int Attack(Fighter opponent);	// Damage (+ Damage if roll higher than critPerc)
 private:
 
 	// Has this vendor/fighter lost?

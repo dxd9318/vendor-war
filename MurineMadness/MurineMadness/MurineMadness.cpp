@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include "Fighter.h"
 
 int main()
 {
